@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Hanstagram" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

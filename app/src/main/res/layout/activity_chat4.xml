@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/latar1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/latar" />
+
+    <ImageView
+        android:id="@+id/latar2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/latar2" />
+
+    <ImageView
+        android:id="@+id/latar3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="78dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/latar3" />
+
+    <LinearLayout
+        android:id="@+id/profil"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="25dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chatprofil7" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yasin"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="7dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last seen 09:00 AM"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="7dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exit"
+            android:layout_marginLeft="97dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profil"
+        android:src="@drawable/garis2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:id="@+id/camerabtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat6"
+            android:src="@drawable/kamerabtn"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/chat6"
+            android:src="@drawable/massage1"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/chatbg"
+            android:hint="Ketikkan pesan anda"
+            android:paddingLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/sendmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat6"
+            android:src="@drawable/sendbtn"
+            android:layout_marginLeft="334dp"
+            android:layout_marginTop="30dp"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
