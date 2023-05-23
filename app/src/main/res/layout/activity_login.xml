@@ -100,7 +100,7 @@
         android:height="30dp"
         android:layout_marginTop="10dp"
         android:text="Login"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
